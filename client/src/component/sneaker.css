@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brandNameSneaker {
+  color: #2b3280;
+}
+
+.brandNameCity {
+  color: brown;
+}
+
+.navBarLink {
+  text-decoration: none !important;
+  color: #303030;
+}
+
+.navBarLink:hover {
+  color: brown;
+}
+
+.sneakerCard {
+  cursor: pointer;
+}
+
+.price {
+  color: #2b3280;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cardBody {
+  color: gray;
+}
+
+.cardFooter {
+  background-color: #2b3280;
+}
+
+.cardFooter:hover {
+  color: #fff;
+}
+
+.card-title {
+  color: #555555;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.card-details {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+
+.size-stock {
+  cursor: pointer;
+  background-color: #2b3280;
+  color: #fff;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.size-stock:hover span {
+  display: none;
+}
+
+.size-stock:hover:before {
+  content: "Add to cart";
+  font-weight: bold;
+}
+
+.size-block-title {
+  color: #408860;
+  font-weight: bold;
+}
+
+/*
+====================================
+*/
+
+.increase-decrease {
+  width: 300px;
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+
+.sign-btn {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sign-btn:hover {
+  cursor: pointer;
+}
+
+.increase-decrease #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.increase-decrease #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+.number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 7px;
+  width: 40px;
+  height: 40px;
+}
+
+.checkout-btn {
+  background-color: #f9c12d;
+}
+
+/*Cart summary*/
+
+.order-summary {
+  width: 384px;
+  height: 384px;
+  background-color: #efefef;
+  padding: 64px 24px 32px 24px;
+  font-size: 16px;
+  color: #4f4e4d;
+  margin: 15px 10px 0 15px;
+  float: right;
+}
+
+.align-span {
+  float: right;
+}
+
+.summary-divider {
+  width: 100%;
+}
+
+/* 
+  Number of items in a cart
+*/
+
+/* .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+} */
