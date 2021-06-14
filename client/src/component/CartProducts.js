@@ -1,37 +1,20 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { ListGroup } from "react-bootstrap";
 
-const CartProducts = () => {
+const CartProducts = (props) => {
+  const { cart } = useSelector(({ cart }) => ({
+    cart,
+  }));
+
   return (
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td colSpan="2">Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </Table>
+    <ListGroup className="cart-group">
+      {cart !== undefined && (
+        <ListGroup.Item variant="secondary">Sneaker Size</ListGroup.Item>
+      )}
+      {cart !== undefined &&
+        cart.map((sneaker) => <ListGroup.Item>{sneaker}</ListGroup.Item>)}
+    </ListGroup>
   );
 };
 
