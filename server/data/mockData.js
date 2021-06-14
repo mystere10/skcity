@@ -7,7 +7,7 @@ module.exports = sneakers = [
     model: "Air Force one",
     price: "$170",
     picture:
-      "/home/mystere/Documents/Dev/bk/skcity/server/assets/products/images/1623510267727-air-max-270-mens-shoe-KkLcGR.jpeg",
+      "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
     sizes: {
       35: "30 pairs",
@@ -16,7 +16,7 @@ module.exports = sneakers = [
       38: "50 pairs",
       39: "100 pairs",
       40: "95 pairs",
-      42: "30",
+      42: "30 pairs",
     },
   },
   {
@@ -25,7 +25,7 @@ module.exports = sneakers = [
     model: "Air Force one",
     price: "$170",
     picture:
-      "/home/mystere/Documents/Dev/bk/skcity/server/assets/products/images/1623510267727-air-max-270-mens-shoe-KkLcGR.jpeg",
+      "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
     sizes: {
       35: "30 pairs",
@@ -43,7 +43,7 @@ module.exports = sneakers = [
     model: "Air Force one",
     price: "$170",
     picture:
-      "/home/mystere/Documents/Dev/bk/skcity/server/assets/products/images/1623510267727-air-max-270-mens-shoe-KkLcGR.jpeg",
+      "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
     sizes: {
       35: "30 pairs",
@@ -52,7 +52,7 @@ module.exports = sneakers = [
       38: "50 pairs",
       39: "100 pairs",
       40: "95 pairs",
-      42: "30",
+      42: "30 pairs",
     },
   },
   {
@@ -61,7 +61,7 @@ module.exports = sneakers = [
     model: "Air Force one",
     price: "$170",
     picture:
-      "/home/mystere/Documents/Dev/bk/skcity/server/assets/products/images/1623510267727-air-max-270-mens-shoe-KkLcGR.jpeg",
+      "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
     sizes: {
       35: "30 pairs",
@@ -70,7 +70,7 @@ module.exports = sneakers = [
       38: "50 pairs",
       39: "100 pairs",
       40: "95 pairs",
-      42: "30",
+      42: "30 pairs",
     },
   },
   {
@@ -79,7 +79,7 @@ module.exports = sneakers = [
     model: "Air Force one",
     price: "$170",
     picture:
-      "/home/mystere/Documents/Dev/bk/skcity/server/assets/products/images/1623510267727-air-max-270-mens-shoe-KkLcGR.jpeg",
+      "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
     sizes: {
       35: "30 pairs",
@@ -88,7 +88,7 @@ module.exports = sneakers = [
       38: "50 pairs",
       39: "100 pairs",
       40: "95 pairs",
-      42: "30",
+      42: "30 pairs",
     },
   },
 ];
