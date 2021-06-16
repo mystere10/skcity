@@ -62,17 +62,15 @@ const SneakerDetail = (props) => {
                 />
                 <div className="card-text">
                   <p className="size-block-title">Size in stock</p>
-                  {Object.entries(singleSneaker.data[0].sizes).map(
-                    ([key, value]) => (
-                      <div
-                        key={key}
-                        className="size-stock"
-                        onClick={() => addToCart(key)}
-                      >
-                        <span>{`${key}: ${value}`}</span>
-                      </div>
-                    )
-                  )}
+                  {singleSneaker.data[0].sizes.map((sneaker, key) => (
+                    <div
+                      key={key}
+                      className="size-stock"
+                      onClick={() => addToCart(sneaker)}
+                    >
+                      <span>{`${sneaker.size}: ${sneaker.quantity}`}</span>
+                    </div>
+                  ))}
                 </div>
                 <Link to="/checkout">
                   <ReusableBtn text="Checkout" />

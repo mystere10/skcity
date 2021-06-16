@@ -1,8 +1,6 @@
 import React from "react";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
-console.log(process.env.REACT_APP_FLUTTER_WAVE_PUBLIC_KEY);
-
 export default function App() {
   const config = {
     public_key: process.env.REACT_APP_FLUTTER_WAVE_PUBLIC_KEY,
@@ -12,7 +10,7 @@ export default function App() {
     payment_options: "card,mobilemoney,ussd",
     customer: {
       email: "user@gmail.com",
-      phonenumber: "07064586146",
+      phonenumber: "0782132164",
       name: "Nkunzi Innocent",
     },
     customizations: {

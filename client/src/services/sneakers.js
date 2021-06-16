@@ -24,9 +24,27 @@ const getSingleSneaker = async (id) => {
   }
 };
 
+const createSneaker = (sneaker) => {
+  try {
+    return axios.post(`/sneaker`, sneaker, {
+      headers: {
+        // "Access-Control-Allow-Origin": "*",
+        "Content-Type": "multipart/form-data",
+        // "Content-Type": "multipart/form-data; boundary=some------",
+        // "Content-Type": "application/json; charset=UTF-8",
+      },
+    });
+  } catch (error) {
+    notification.error({
+      message: "Unable to process your request, please try again later.",
+    });
+  }
+};
+
 const sneakersAPI = {
   getSneakers,
   getSingleSneaker,
+  createSneaker,
 };
 
 export default sneakersAPI;

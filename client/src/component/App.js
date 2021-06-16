@@ -9,6 +9,7 @@ import SneakerDetail from "./SneakerDetail";
 import UserCart from "./UserCart";
 import Footer from "./Footer";
 import Checkout from "./Checkout";
+import AddSneaker from "./AddSneaker";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         </Container>
         <Switch>
           <Route exact path="/" component={Display} />
+          <Route exact path="/add" component={AddSneaker} />
           <Route exact path="/details/:id" component={SneakerDetail} />
           <Route exact path="/cart" component={UserCart} />
           <Route exact path="/checkout" component={Checkout} />

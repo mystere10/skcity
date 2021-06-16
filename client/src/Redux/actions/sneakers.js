@@ -2,6 +2,7 @@ import {
   GET_SNEAKERS,
   GET_SINGLE_SNEAKER,
   SET_CART,
+  CREATE_SNEAKER,
 } from "../actionTypes/sneaker";
 import { showLoading, hideLoading } from "react-redux-loading";
 import sneakersAPI from "../../services/sneakers";
@@ -24,6 +25,13 @@ export function setUserCart(cart) {
   return {
     type: SET_CART,
     cart,
+  };
+}
+
+export function createSneaker(sneaker) {
+  return {
+    type: CREATE_SNEAKER,
+    sneaker,
   };
 }
 
@@ -50,5 +58,17 @@ export function handleSingleSneaker(id) {
 export function functionHandleSetUserCart(cart) {
   return (dispatch) => {
     dispatch(setUserCart(cart));
+  };
+}
+
+export function handleCreateSneaker(sneaker) {
+  return (dispatch) => {
+    dispatch(showLoading());
+    return sneakersAPI
+      .createSneaker(sneaker)
+      .then((res) => {
+        dispatch(createSneaker(res));
+      })
+      .then(() => dispatch(hideLoading()));
   };
 }

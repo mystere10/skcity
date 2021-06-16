@@ -9,15 +9,15 @@ module.exports = sneakers = [
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
-    sizes: {
-      35: "30 pairs",
-      36: "30 pairs",
-      37: "10 pairs",
-      38: "50 pairs",
-      39: "100 pairs",
-      40: "95 pairs",
-      42: "30 pairs",
-    },
+    sizes: [
+      { size: 35, quantity: "30 pairs" },
+      { size: 36, quantity: "30 pairs" },
+      { size: 38, quantity: "30 pairs" },
+      { size: 39, quantity: "30 pairs" },
+      { size: 40, quantity: "30 pairs" },
+      { size: 41, quantity: "30 pairs" },
+      { size: 42, quantity: "30 pairs" },
+    ],
   },
   {
     id: "q1mgprrd4jokn9jedv0edf",
@@ -27,15 +27,15 @@ module.exports = sneakers = [
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
-    sizes: {
-      35: "30 pairs",
-      36: "30 pairs",
-      37: "10 pairs",
-      38: "50 pairs",
-      39: "100 pairs",
-      40: "95 pairs",
-      42: "30",
-    },
+    sizes: [
+      { size: 35, quantity: "30 pairs" },
+      { size: 36, quantity: "30 pairs" },
+      { size: 38, quantity: "30 pairs" },
+      { size: 39, quantity: "30 pairs" },
+      { size: 40, quantity: "30 pairs" },
+      { size: 41, quantity: "30 pairs" },
+      { size: 42, quantity: "30 pairs" },
+    ],
   },
   {
     id: "q1mgprrd4jakn9jeeosmdm",
@@ -45,15 +45,15 @@ module.exports = sneakers = [
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
-    sizes: {
-      35: "30 pairs",
-      36: "30 pairs",
-      37: "10 pairs",
-      38: "50 pairs",
-      39: "100 pairs",
-      40: "95 pairs",
-      42: "30 pairs",
-    },
+    sizes: [
+      { size: 35, quantity: "30 pairs" },
+      { size: 36, quantity: "30 pairs" },
+      { size: 38, quantity: "30 pairs" },
+      { size: 39, quantity: "30 pairs" },
+      { size: 40, quantity: "30 pairs" },
+      { size: 41, quantity: "30 pairs" },
+      { size: 42, quantity: "30 pairs" },
+    ],
   },
   {
     id: "q1mgprrd3edkn9jidv0mdm",
@@ -63,15 +63,15 @@ module.exports = sneakers = [
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
-    sizes: {
-      35: "30 pairs",
-      36: "30 pairs",
-      37: "10 pairs",
-      38: "50 pairs",
-      39: "100 pairs",
-      40: "95 pairs",
-      42: "30 pairs",
-    },
+    sizes: [
+      { size: 35, quantity: "30 pairs" },
+      { size: 36, quantity: "30 pairs" },
+      { size: 38, quantity: "30 pairs" },
+      { size: 39, quantity: "30 pairs" },
+      { size: 40, quantity: "30 pairs" },
+      { size: 41, quantity: "30 pairs" },
+      { size: 42, quantity: "30 pairs" },
+    ],
   },
   {
     id: "q1mgprrdjm3kn9jedv0mdm",
@@ -81,14 +81,14 @@ module.exports = sneakers = [
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
     releaseDate: "120-06-2021",
-    sizes: {
-      35: "30 pairs",
-      36: "30 pairs",
-      37: "10 pairs",
-      38: "50 pairs",
-      39: "100 pairs",
-      40: "95 pairs",
-      42: "30 pairs",
-    },
+    sizes: [
+      { size: 35, quantity: "30 pairs" },
+      { size: 36, quantity: "30 pairs" },
+      { size: 38, quantity: "30 pairs" },
+      { size: 39, quantity: "30 pairs" },
+      { size: 40, quantity: "30 pairs" },
+      { size: 41, quantity: "30 pairs" },
+      { size: 42, quantity: "30 pairs" },
+    ],
   },
 ];

@@ -13,7 +13,9 @@ const CartProducts = (props) => {
         <ListGroup.Item variant="secondary">Sneaker Size</ListGroup.Item>
       )}
       {cart !== undefined &&
-        cart.map((sneaker) => <ListGroup.Item>{sneaker}</ListGroup.Item>)}
+        cart.map((sneaker, key) => (
+          <ListGroup.Item key={key}>{sneaker.size}</ListGroup.Item>
+        ))}
     </ListGroup>
   );
 };

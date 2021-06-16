@@ -22,6 +22,13 @@ const NavBar = () => {
                 </NavLink>
               </Nav.Item>
             </Nav>
+            <Nav className="mr-auto">
+              <Nav.Item>
+                <NavLink to="/add" className="navBarLink">
+                  Add Sneaker
+                </NavLink>
+              </Nav.Item>
+            </Nav>
             <Nav>
               <Nav.Item>
                 <NavLink to="/checkout" className="navBarLink">

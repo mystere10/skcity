@@ -177,6 +177,14 @@
   width: 100%;
 }
 
+.sneaker-form {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid #4f4e4d; */
+  padding: 10px;
+  /* text-align: center; */
+}
+
 /* 
   Number of items in a cart
 */

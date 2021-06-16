@@ -1,30 +1,36 @@
 const moment = require("moment");
 const path = require("path");
 const Product = require("../models/Product");
+const dotenv = require("dotenv");
 const { FormatCreateProduct } = require("../helpers/ProductFormatter");
+
+dotenv.config();
 
 const __basedir = path.resolve(path.dirname(""));
 
 exports.createProduct = (request, response, next) => {
+  console.log(request.body);
   try {
     const { brandName, model, price, releaseDate } = FormatCreateProduct(
       request.body,
       ["brandName", "model", "price", "releaseDate"]
     );
 
-    let destination = path.join(
-      __basedir,
-      "/assets/products/images/" + request.file.filename
-    );
+    const sizes = JSON.parse(request.body.sizes);
 
-    if (!moment(releaseDate, "DD-MM-YYYY", true).isValid())
+    let location =
+      process.env.API_SERVER +
+      "/assets/products/images/" +
+      request.file.filename;
+    if (!moment(releaseDate, "YYYY-MM-DD", true).isValid())
       throw { name: "Invalid date", path: "releaseDate" };
     const newProduct = new Product(
       brandName,
       model,
       price,
-      destination,
-      releaseDate
+      location,
+      releaseDate,
+      sizes
     );
 
     const product = newProduct.create();

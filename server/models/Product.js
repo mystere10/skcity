@@ -2,12 +2,13 @@ const { generateUID } = require("../helpers/ProductFormatter");
 const sneakers = require("../data/mockData");
 
 module.exports = class Product {
-  constructor(brandName, model, price, picture, releaseDate) {
+  constructor(brandName, model, price, picture, releaseDate, sizes) {
     this.brandName = brandName;
     this.model = model;
     this.price = price;
     this.picture = picture;
     this.releaseDate = releaseDate;
+    this.sizes = sizes;
   }
 
   create() {
