@@ -20,7 +20,7 @@ On the backend three endpoints was implemented.
 1. Get all Sneakers GET `localhost:5000/api/v1/sneakers`
 2. Get single Sneaker GET `localhost:5000/api/v1/sneaker/:id`
 3. Create a Sneaker POST `localhost:5000/api/v1/sneaker`
-4. Implemented unit test and integration tests
+4. Implemented unit tests and integration tests
 5. Type `npm run test` to run tests
 
 ### `Frontend`
