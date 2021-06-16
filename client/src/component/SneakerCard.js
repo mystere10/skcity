@@ -10,7 +10,7 @@ const SneakerCard = ({ sneaker }) => {
       style={{ textDecoration: "none" }}
     >
       <Card className="sneakerCard">
-        <Card.Img variant="top" src={sneaker.picture} />
+        <Card.Img variant="top" src={sneaker.picture} className="card-img" />
         <Card.Body className="text-muted">
           <Card.Title>{sneaker.model}</Card.Title>
           <div>{sneaker.brandName}</div>

@@ -23,8 +23,6 @@ const CartSummary = () => {
     total = temp;
   }
 
-  console.log(total);
-
   return (
     <div className="order-summary">
       <p>

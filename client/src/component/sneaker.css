@@ -185,27 +185,10 @@
   /* text-align: center; */
 }
 
-/* 
-  Number of items in a cart
-*/
-
-/* .badge {
-  padding-left: 9px;
-  padding-right: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
+.card-img {
+  height: 253px !important;
 }
 
-.label-warning[href],
-.badge-warning[href] {
-  background-color: #c67605;
+.detail-img {
+  height: 100% !important;
 }
-#lblCartCount {
-  font-size: 12px;
-  background: #ff0000;
-  color: #fff;
-  padding: 0 5px;
-  vertical-align: top;
-  margin-left: -10px;
-} */

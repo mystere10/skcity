@@ -35,8 +35,6 @@ const SneakerDetail = (props) => {
     functionHandleSetUserCart(cart)(dispatch);
   }, [cart]);
 
-  console.log(cart);
-
   return (
     <div className="container">
       <div className="card mb-3" style={{ maxWidth: "33.75rem !important" }}>
@@ -44,8 +42,8 @@ const SneakerDetail = (props) => {
           <div className="row no-gutters">
             <div className="col-md-4">
               <img
-                src="http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg"
-                className="card-img"
+                src={singleSneaker.data[0].picture}
+                className="card-img detail-img"
                 alt="..."
               />
             </div>

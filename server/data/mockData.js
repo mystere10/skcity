@@ -8,7 +8,7 @@ module.exports = sneakers = [
     price: "$170",
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
-    releaseDate: "120-06-2021",
+    releaseDate: "2021-01-16",
     sizes: [
       { size: 35, quantity: "30 pairs" },
       { size: 36, quantity: "30 pairs" },
@@ -26,7 +26,7 @@ module.exports = sneakers = [
     price: "$170",
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
-    releaseDate: "120-06-2021",
+    releaseDate: "2021-01-16",
     sizes: [
       { size: 35, quantity: "30 pairs" },
       { size: 36, quantity: "30 pairs" },
@@ -44,7 +44,7 @@ module.exports = sneakers = [
     price: "$170",
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
-    releaseDate: "120-06-2021",
+    releaseDate: "2021-01-16",
     sizes: [
       { size: 35, quantity: "30 pairs" },
       { size: 36, quantity: "30 pairs" },
@@ -62,7 +62,7 @@ module.exports = sneakers = [
     price: "$170",
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
-    releaseDate: "120-06-2021",
+    releaseDate: "2021-01-16",
     sizes: [
       { size: 35, quantity: "30 pairs" },
       { size: 36, quantity: "30 pairs" },
@@ -80,7 +80,7 @@ module.exports = sneakers = [
     price: "$170",
     picture:
       "http://localhost:5000/assets/products/images/1623524035645-air-max-270-mens-shoe-KkLcGR.jpeg",
-    releaseDate: "120-06-2021",
+    releaseDate: "2021-01-16",
     sizes: [
       { size: 35, quantity: "30 pairs" },
       { size: 36, quantity: "30 pairs" },

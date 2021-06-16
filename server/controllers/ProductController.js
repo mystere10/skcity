@@ -9,19 +9,22 @@ dotenv.config();
 const __basedir = path.resolve(path.dirname(""));
 
 exports.createProduct = (request, response, next) => {
-  console.log(request.body);
   try {
     const { brandName, model, price, releaseDate } = FormatCreateProduct(
       request.body,
       ["brandName", "model", "price", "releaseDate"]
     );
 
-    const sizes = JSON.parse(request.body.sizes);
+    let sizes;
 
-    let location =
-      process.env.API_SERVER +
-      "/assets/products/images/" +
-      request.file.filename;
+    if (request.body.sizes) sizes = JSON.parse(request.body.sizes);
+
+    let location;
+    if (request.file)
+      location =
+        process.env.API_SERVER +
+        "/assets/products/images/" +
+        request.file.filename;
     if (!moment(releaseDate, "YYYY-MM-DD", true).isValid())
       throw { name: "Invalid date", path: "releaseDate" };
     const newProduct = new Product(
@@ -34,9 +37,8 @@ exports.createProduct = (request, response, next) => {
     );
 
     const product = newProduct.create();
-    response.send(product);
+    response.status(201).send(product);
   } catch (error) {
-    console.log(error);
     return response.send({ status: 400, response: error });
   }
 };
