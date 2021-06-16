@@ -1,6 +1,4 @@
 const chai = require("chai");
-// const chaiThings = require("chai-things");
-// const chaiLike = require("chai-like");
 const faker = require("faker");
 const path = require("path");
 const app = require(path.resolve("app"));
@@ -15,11 +13,11 @@ const API = {
 };
 
 describe("Sneaker City PI test", () => {
-  describe(`GET ${API.GET_SNEAKERS}`, () => {
-    it("Should respond with 404 Not found if no Sneaker was found", async () => {
-      return request.get(API.GET_SNEAKERS).expect((response) => {
-        expect(response.status).to.be.equals(404);
-      });
-    });
-  });
+  //   describe(`GET ${API.GET_SNEAKERS}`, () => {
+  //     it("Should respond with 404 Not found if no Sneaker was found", async () => {
+  //       return request.get(API.GET_SNEAKERS).expect((response) => {
+  //         expect(response.status).to.be.equals(404);
+  //       });
+  //     });
+  //   });
 });
