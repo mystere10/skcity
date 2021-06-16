@@ -17,9 +17,9 @@ This project was implemented in a one folder containing two children folders `se
 ### `Backend`
 
 On the backend three endpoints was implemented.
-1. Get all Sneakers GET `[link](localhost:5000/api/v1/sneakers)`
-2. Get single Sneaker GET `[link](localhost:5000/api/v1/sneaker/:id)`
-3. Create a Sneaker POST `[link](localhost:5000/api/v1/sneaker)`
+1. Get all Sneakers GET `localhost:5000/api/v1/sneakers`
+2. Get single Sneaker GET `localhost:5000/api/v1/sneaker/:id`
+3. Create a Sneaker POST `localhost:5000/api/v1/sneaker`
 
 ### `Frontend`
 
@@ -30,8 +30,6 @@ On the frontend the following was implemented
 4. Add sneaker to cart
 5. Checkout
 6. Make payment
-
-### `npm run eject`
 
 
 

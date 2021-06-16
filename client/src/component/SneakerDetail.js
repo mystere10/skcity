@@ -66,7 +66,12 @@ const SneakerDetail = (props) => {
                     <div
                       key={key}
                       className="size-stock"
-                      onClick={() => addToCart(sneaker)}
+                      onClick={() =>
+                        addToCart({
+                          ...sneaker,
+                          price: singleSneaker.data[0].price,
+                        })
+                      }
                     >
                       <span>{`${sneaker.size}: ${sneaker.quantity}`}</span>
                     </div>
