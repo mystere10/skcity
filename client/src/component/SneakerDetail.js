@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { handleSingleSneaker } from "../Redux/actions/sneakers";
-import IncreaseDecreaseBtn from "./IncreaseDecreaseBtn";
-import { functionHandleSetUserCart } from "../Redux/actions/sneakers";
-import ReusableBtn from "./ReusableBtn";
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { handleSingleSneaker } from '../Redux/actions/sneakers';
+import IncreaseDecreaseBtn from './IncreaseDecreaseBtn';
+import { functionHandleSetUserCart } from '../Redux/actions/sneakers';
+import ReusableBtn from './ReusableBtn';
 
 const SneakerDetail = (props) => {
   const [quantity, setQuantity] = useState(0);
@@ -37,21 +37,16 @@ const SneakerDetail = (props) => {
 
   return (
     <div className="container">
-      <div className="card mb-3" style={{ maxWidth: "33.75rem !important" }}>
+      <div className="card mb-3" style={{ maxWidth: '33.75rem !important' }}>
         {singleSneaker && (
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img
-                src={singleSneaker.data[0].picture}
-                className="card-img detail-img"
-                alt="..."
-              />
+              <img src={singleSneaker.data[0].picture} className="card-img detail-img" alt="..." />
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title card-details">
-                  {singleSneaker.data[0].model}
-                </h5>
+                <h5 className="card-title card-details">{singleSneaker.data[0].model}</h5>
+                <div className="brand-name">{singleSneaker.data[0].brandName}</div>
                 <div className="price">{singleSneaker.data[0].price}</div>
                 <IncreaseDecreaseBtn
                   increaseQuantity={increaseQuantity}

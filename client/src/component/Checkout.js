@@ -1,8 +1,8 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import CartSummary from "./CartSummary";
-import CartProducts from "./CartProducts";
-import Empty from "./Empty";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import CartSummary from './CartSummary';
+import CartProducts from './CartProducts';
+import Empty from './Empty';
 
 const Checkout = () => {
   const { cart } = useSelector(({ cart }) => ({
@@ -10,7 +10,7 @@ const Checkout = () => {
   }));
   return (
     <div className="container">
-      <div className="card md-3" style={{ maxWidth: "33.75rem !important" }}>
+      <div className="card md-3" style={{ maxWidth: '33.75rem !important' }}>
         <div className="row no-gutters">
           <div className="col">
             <CartProducts />

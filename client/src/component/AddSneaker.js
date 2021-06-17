@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { Container, Form, Button, Col } from "react-bootstrap";
-import { handleCreateSneaker } from "../Redux/actions/sneakers";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { Container, Form, Button, Col } from 'react-bootstrap';
+import { handleCreateSneaker } from '../Redux/actions/sneakers';
 
 const AddSneaker = () => {
   const [sneaker, setSneaker] = useState({
-    brandName: "",
-    model: "",
-    price: "",
-    picture: "",
-    releaseDate: "",
+    brandName: '',
+    model: '',
+    price: '',
+    picture: '',
+    releaseDate: '',
     sizes: [],
   });
 
@@ -40,13 +39,13 @@ const AddSneaker = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData();
-    formData.append("name", sneaker.picture.name);
-    formData.append("picture", sneaker.picture);
-    formData.append("brandName", sneaker.brandName);
-    formData.append("model", sneaker.model);
-    formData.append("price", `$${sneaker.price}`);
-    formData.append("releaseDate", sneaker.releaseDate);
-    formData.append("sizes", JSON.stringify(sneaker.sizes));
+    formData.append('name', sneaker.picture.name);
+    formData.append('picture', sneaker.picture);
+    formData.append('brandName', sneaker.brandName);
+    formData.append('model', sneaker.model);
+    formData.append('price', `$${sneaker.price}`);
+    formData.append('releaseDate', sneaker.releaseDate);
+    formData.append('sizes', JSON.stringify(sneaker.sizes));
 
     dispatch(handleCreateSneaker(formData));
   };
@@ -54,7 +53,7 @@ const AddSneaker = () => {
   return (
     <Container>
       <div className="row">
-        <Form className="sneaker-form">
+        <Form className="sneaker-form" onSubmit={handleSubmit}>
           <Form.Group controlId="formGroupText">
             <Form.Control
               type="text"
@@ -62,6 +61,7 @@ const AddSneaker = () => {
               placeholder="Brand name"
               value={sneaker.brandName}
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group controlId="formGroupText">
@@ -71,15 +71,17 @@ const AddSneaker = () => {
               name="model"
               value={sneaker.model}
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group controlId="formGroupText">
             <Form.Control
-              type="text"
+              type="number"
               placeholder="Price"
               name="price"
               value={sneaker.price}
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group controlId="formGroupText">
@@ -98,6 +100,7 @@ const AddSneaker = () => {
               name="releaseDate"
               value={sneaker.releaseDate}
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group controlId="formGroupText">
@@ -109,6 +112,7 @@ const AddSneaker = () => {
                   name="size"
                   defaultValue={size}
                   onChange={handleSizeQuantity}
+                  required
                 />
               </Col>
               <Col>
@@ -118,6 +122,7 @@ const AddSneaker = () => {
                   name="quantity"
                   defaultValue={size}
                   onChange={handleSizeQuantity}
+                  required
                 />
               </Col>
               <Col>
@@ -128,7 +133,7 @@ const AddSneaker = () => {
             </Form.Row>
           </Form.Group>
           <Form.Group>
-            <Button className="mb-2" onClick={handleSubmit}>
+            <Button className="mb-2" type="submit">
               Submit
             </Button>
           </Form.Group>

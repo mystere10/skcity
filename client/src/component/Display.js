@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import { handleGetSneakers } from "../Redux/actions/sneakers";
-import { useDispatch, useSelector } from "react-redux";
-import { CardGroup, Card, Container, CardDeck } from "react-bootstrap";
-import SneakerCard from "./SneakerCard";
+import React, { useEffect } from 'react';
+import { handleGetSneakers } from '../Redux/actions/sneakers';
+import { useDispatch, useSelector } from 'react-redux';
+import SneakerCard from './SneakerCard';
 
 const Display = () => {
   const dispatch = useDispatch();

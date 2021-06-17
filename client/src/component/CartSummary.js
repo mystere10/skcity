@@ -1,7 +1,6 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import Flutterwave from "./Flutterwave";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import Flutterwave from './Flutterwave';
 
 const CartSummary = () => {
   const { cart } = useSelector(({ cart }) => ({
@@ -12,7 +11,7 @@ const CartSummary = () => {
   let total;
   if (cart !== undefined) {
     cart.map((sneaker) => {
-      prices.push(sneaker.price.split("$")[1]);
+      prices.push(sneaker.price.split('$')[1]);
     });
   }
   if (prices.length > 0) {
@@ -27,11 +26,11 @@ const CartSummary = () => {
     <div className="order-summary">
       <p>
         <span>Subtotal</span>
-        <span className="align-span">RWF {total}</span>
+        <span className="align-span">$ {total}</span>
       </p>
       <p>
         <span>Delivery fee</span>
-        <span className="align-span">RWF 100</span>
+        <span className="align-span">$ 100</span>
       </p>
       <p>
         <span>Estimated delivery time</span>
@@ -40,7 +39,7 @@ const CartSummary = () => {
       <hr className="summary-divider" />
       <p>
         <span>Total</span>
-        <span className="align-span">RWF {total + 100}</span>
+        <span className="align-span">$ {total + 100}</span>
       </p>
       {/* <button className="style.checkOutbutton">GO TO PAYMENT</button> */}
       <Flutterwave />

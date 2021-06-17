@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
 
 .row {
   display: flex;
@@ -47,7 +47,7 @@
 
 .card-title {
   color: #555555;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .card-details {
@@ -71,7 +71,7 @@
 }
 
 .size-stock:hover:before {
-  content: "Add to cart";
+  content: 'Add to cart';
   font-weight: bold;
 }
 
@@ -191,4 +191,9 @@
 
 .detail-img {
   height: 100% !important;
+}
+
+.brand-name {
+  font-weight: bold;
+  color: #555555;
 }
